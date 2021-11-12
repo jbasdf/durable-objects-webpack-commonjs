@@ -16,3 +16,8 @@ Worker code is in `src/`. The Durable Object `Counter` class is in `src/counter.
 Webpack is configured to output a bundled CommonJS Module to `dist/index.js`.
 
 This project uses a shim ES module at `src/shim.mjs` that imports the commonjs bundle, and re-exports it. This is necessary because commonjs does not support named exports, and the only way to export a durable object class is using named exports.
+
+
+## Tests
+This version of the template adds basic support for testing with Jest with:
+  `npm run test`
